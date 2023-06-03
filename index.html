@@ -34,13 +34,12 @@
             </section>
             <nav>
                 <ul class="main-nav">
-                    <li><a class="nav" href="#">Agencja</a></li>
-                    <li><a class="nav" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="nav" href="#">Kontakt</a></li>
+                    <li><a class="navi" href="index.html">Agencja</a><div class="current"></div></li>
+                    <li><a class="navi" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="navi" href="#">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
-        
         <div class="menu-contact">
                 <ul class="contacts">
                     
@@ -64,10 +63,17 @@
 </header>
 <main class="container">
         <section class="main-block-upper">
+
+
             <div class="container">
                 <h1 class="main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button class="button-order" type="button">Zamów usługę</button>
+
+                <button data-modal-open class="button-order" type="button">Zamów usługę</button>
             </div>
+
+            
+
+
         </section>
         <section class="main-block-middle">
         <div class="container-antenna">
@@ -118,6 +124,8 @@
                     height="294"
                     width="370"
                     >
+                    <div class="item-text">
+                    <p>APLIKACJE KOMPUTEROWE</p></li>div>
                 </li>
                 <li class="main-block-lower-item">
                     <img
@@ -126,6 +134,8 @@
                     height="294"
                     width="370"
                     >
+                    <div class="item-text">
+                    <p>APLIKACJE MOBILNE</p></li>div>
                 </li>
                 <li class="main-block-lower-item">
                     <img
@@ -134,6 +144,8 @@
                     height="294"
                     width="370"
                     >
+                    <div class="item-text">
+                    <p>ROZWIĄZANIA GRAFICZNE</p></li>div>
                 </li>
             </ul>
         </div>
@@ -359,5 +371,11 @@
                 </ul>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                    <button class="button-close" data-modal-close>CLOSE</button>
+                    </div>
+            </div>
+    <script src="./js/modal.js"></script>    
 </body>
 </html>
