@@ -197,12 +197,14 @@ h2
     height: 16px;
     width: 130px;
     color: var(--light-grey);
+
 }
 
 .mailadress
 {
     height: 16px;
     color: var(--light-grey);
+
 }
 
 .current
@@ -234,12 +236,8 @@ h2
     height: 80px;
     display:flex;
     justify-content:center; 
-    gap: 30px;  
-
-
+    gap: 30px;      
 }
-
-
 
 .contact-link 
 {
@@ -249,34 +247,20 @@ h2
     letter-spacing:0.02px;
     margin-top: 32px;
     display:flex;
-    color: var(--light-grey);
+    color: var(--background-grey);
     fill: var(--light-grey);
-transition-property: fill, color;
-
-transition-duration: 2.25s;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 6);
-
+    transition-property: fill, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in /*cubic-bezier(0.4, 0, 0.2, 6)*/;
 }
 
-.contact-link:hover,
-.contact-link:focus,
-.contact-link:active,
-.contact-link:hover .envelope,
-.contact-link:focus .envelope,
-.contact-link:active .envelope,
-.contact-link:hover .smartphone,
-.contact-link:focus .smartphone,
-.contact-link:active .smartphone
-
-{
+a.mailadress:hover .envelope,
+a.telnumber:hover .smartphone
+{ 
     color: var(--blue);
     fill: var(--blue); 
     cursor: pointer; 
-    transition: fill 2s;
-    transition: color 2s;
 }
-
-
 
 
                         /* main part  upper*/
