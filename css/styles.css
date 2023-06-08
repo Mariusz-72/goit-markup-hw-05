@@ -47,9 +47,7 @@ a:focus,
 a:active 
 {
     color: var(--blue);
-    transition-property: visibility, opacity, transform;
-    transition-duration: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
+    
 }
 
 img {
@@ -164,14 +162,14 @@ h2
 .navi 
 {
     color: var(--black);
+    transition-property: visibility, opacity, transform, color;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
 }
 
 .navi:hover,.navi:focus
 {
     color: var(--blue);
-    transition-property: visibility, opacity, transform;
-    transition-duration: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
 }
 
 .envelope
@@ -180,6 +178,9 @@ h2
     height:12px;
     margin-right: 10px;
     fill: var(--light-grey);
+transition-property: fill, color;
+transition-duration: 0.25s;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -190,21 +191,19 @@ h2
     margin-right: 10px;
     margin-bottom: -3px;
     fill: var(--light-grey);
+transition-property: fill, color;
+transition-duration: 0.25s;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.telnumber
-{    
-    height: 16px;
-    width: 130px;
-    color: var(--light-grey);
-
-}
 
 .mailadress
 {
     height: 16px;
     color: var(--light-grey);
-
+transition-property: fill, color;
+transition-duration: 0.25s;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current
@@ -249,17 +248,17 @@ h2
     display:flex;
     color: var(--background-grey);
     fill: var(--light-grey);
-    transition-property: fill, color;
-    transition-duration: 0.25s;
-    transition-timing-function: ease-in /*cubic-bezier(0.4, 0, 0.2, 6)*/;
 }
 
-a.mailadress:hover .envelope,
-a.telnumber:hover .smartphone
+.mailadress:hover .envelope,
+.mailadress:hover .smartphone,
+.envelope:hover,
+.smarphone:hover
 { 
     color: var(--blue);
     fill: var(--blue); 
-    cursor: pointer; 
+    cursor: pointer;
+    
 }
 
 
@@ -563,6 +562,11 @@ left: 50%;
 {
     fill:  var(--extra-light-grey);
     background: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: visibility, opacity, transform, fill;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socialmedia
@@ -576,12 +580,7 @@ left: 50%;
 .main-block-our-team-item:focus
 {
     fill: var(--white); 
-    background: var(--blue); 
-    border-radius: 50%; 
-    cursor: pointer;
-    transition-property: visibility, opacity, transform;
-    transition-duration: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--blue);  
 }
 
                         /* main part  our team*/
@@ -616,7 +615,10 @@ left: 50%;
     display: flex;
     justify-content:center;
     align-items:center;
-    
+    cursor: pointer; 
+    transition-property: transform, border-color, fill;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
     
 }
 
@@ -626,10 +628,7 @@ left: 50%;
 {
     fill: var(--blue); 
     border-color: var(--blue);
-    cursor: pointer; 
-    transition-property: visibility, opacity, transform;
-    transition-duration: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
+    
 }
 
 .group
@@ -745,8 +744,12 @@ footer
     height: 44px;
     width: 44px;
     fill:  var(--white);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%; 
+    cursor: pointer; 
+    transition-property: background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
 }
 
 .footer-socialmedia-icon
@@ -760,12 +763,8 @@ footer
 .footer-list-item:hover,
 .footer-list-item:focus
 { 
-    background: var(--blue); 
-    border-radius: 50%; 
-    cursor: pointer; 
-    transition-property: visibility, opacity, transform;
-    transition-duration: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
+    background-color: var(--blue); 
+    
 }
 
 
