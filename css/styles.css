@@ -899,6 +899,7 @@ position: absolute;
 
 .portfolio-project
 {
+    margin-top:-5px;
     padding: 20px 0 0 24px;
     background-color: var(--white);
     border:1px solid var(--vanila);
