@@ -164,7 +164,7 @@ h2
     color: var(--black);
     transition-property: visibility, opacity, transform, color;
     transition-duration: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navi:hover,.navi:focus
@@ -760,7 +760,7 @@ footer
     cursor: pointer; 
     transition-property: background-color;
     transition-duration: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socialmedia-icon
@@ -882,7 +882,7 @@ position: absolute;
     cursor: pointer;
     transition-property: visibility, opacity, transform;
     transition-duration: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0);
 }
 
@@ -902,7 +902,7 @@ position: absolute;
     color: var(--white);
     transition-property: visibility, opacity, transform;
     transition-duration: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
                 0 1px 2px 0 rgba(0, 0, 0, 0.08),
                 0 3px 1px 0 rgba(0, 0, 0, 0.1);
